@@ -16,9 +16,14 @@ public class BeerSelect extends HttpServlet {
 
     BeerExpert beerExpert = new BeerExpert();
     List resultList = beerExpert.getBrands(c);
-    Iterator it = resultList.iterator();
-    while (it.hasNext()) {
-      out.println("Got beer model : " + it.next());
-    }
+    // Iterator it = resultList.iterator();
+    // while (it.hasNext()) {
+    //   out.println("Got beer model : " + it.next());
+    // }
+
+    request.setAttribute("styles", resultList);
+
+    RequestDispatcher view = request.getRequestDispatcher("result.jsp");
+    view.forward(request, response);
   }
 }
