@@ -16,6 +16,8 @@ public class BeerSelect extends HttpServlet {
 
     BeerExpert beerExpert = new BeerExpert();
     List resultList = beerExpert.getBrands(c);
+
+    // html Write
     // Iterator it = resultList.iterator();
     // while (it.hasNext()) {
     //   out.println("Got beer model : " + it.next());
