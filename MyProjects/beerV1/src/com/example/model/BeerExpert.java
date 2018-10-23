@@ -3,6 +3,7 @@ package com.example.model;
 import java.util.*;
 
 public class BeerExpert {
+
   public ArrayList getBrands(String color) {
     ArrayList brands = new ArrayList();
     if (color.equals("Amber")) {
@@ -14,4 +15,5 @@ public class BeerExpert {
     }
     return brands;
   }
+
 }

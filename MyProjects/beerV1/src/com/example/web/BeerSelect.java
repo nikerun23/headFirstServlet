@@ -8,6 +8,7 @@ import java.util.*;
 import com.example.model.BeerExpert;
 
 public class BeerSelect extends HttpServlet {
+
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
     PrintWriter out = response.getWriter();
     out.println("Beer Selection Advice");
@@ -28,4 +29,5 @@ public class BeerSelect extends HttpServlet {
     RequestDispatcher view = request.getRequestDispatcher("result.jsp");
     view.forward(request, response);
   }
+
 }
