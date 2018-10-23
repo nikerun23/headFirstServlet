@@ -12,5 +12,9 @@
 		<servlet-name>Ch3 Beer</servlet-name>
 		<url-pattern>/SelectBeer.do</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Ch3 Beer</servlet-name>
+		<url-pattern>/SelectBeer2.do</url-pattern>
+	</servlet-mapping>
 
 </web-app>
