@@ -21,6 +21,7 @@ public class WebApp extends HttpServlet {
     }
     out.println("</br>admin Email : " + getServletConfig().getInitParameter("adminEmail"));
     out.println("</br>main Email : " + getServletConfig().getInitParameter("mainEmail"));
+    out.println("</br>master Email : " + getServletContext().getInitParameter("masterEmail"));
   }
 
 }
