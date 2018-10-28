@@ -7,14 +7,22 @@
 		<servlet-name>Ch3 Beer</servlet-name>
 		<servlet-class>com.example.web.BeerSelect</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>Ch3 Beer</servlet-name>
 		<url-pattern>/SelectBeer.do</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Ch4 WebApp</servlet-name>
+		<servlet-class>com.example.web.WebApp</servlet-class>
+		<init-param>
+			<param-name>adminEmail</param-name>
+			<param-value>leehyunkeun@naver.com2</param-value>
+		</init-param>
+	</servlet>
 	<servlet-mapping>
-		<servlet-name>Ch3 Beer</servlet-name>
-		<url-pattern>/SelectBeer2.do</url-pattern>
+		<servlet-name>Ch4 WebApp</servlet-name>
+		<url-pattern>/WebApp.do</url-pattern>
 	</servlet-mapping>
 
 </web-app>
