@@ -12,6 +12,7 @@
         while(it.hasNext()) {
           out.print("</br>try : " + it.next());
         }
+        out.print("</br>content-Length : " + request.getAttribute("contentLength"));
         %>
   </body>
 </html>

@@ -13,6 +13,7 @@ public class BeerSelect extends HttpServlet {
     PrintWriter out = response.getWriter();
     out.println("Beer Selection Advice");
     String c = request.getParameter("color");
+    int contentLength = request.getIntHeader("Content-Length");
     out.println("Got beer color : " + c);
 
     BeerExpert beerExpert = new BeerExpert();
@@ -25,6 +26,7 @@ public class BeerSelect extends HttpServlet {
     // }
 
     request.setAttribute("styles", resultList);
+    request.setAttribute("contentLength", contentLength);
 
     RequestDispatcher view = request.getRequestDispatcher("result.jsp");
     view.forward(request, response);
