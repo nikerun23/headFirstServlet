@@ -13,8 +13,8 @@ public class ListenerTest extends HttpServlet {
     response.setContentType("text/html");
     PrintWriter out = response.getWriter();
     out.println("Test context attribute set Listener<br>");
-    Dog dog = (Dog) getServletContext().getInitParameter("dog");
-    out.println("Dog Breed : " + dog.getBreed(););
+    Dog dog = (Dog) getServletContext().getAttribute("dog");
+    out.println("Dog Breed : " + dog.getBreed());
 
   }
 
