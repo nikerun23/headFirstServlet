@@ -1,6 +1,6 @@
 package com.example;
 
-public Dog class {
+public class Dog {
 
   private String breed;
 
