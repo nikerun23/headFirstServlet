@@ -1,0 +1,15 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+
+	<servlet>
+		<servlet-name>sessionTest</servlet-name>
+		<servlet-class>com.example.web.SessionTest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sessionTest</servlet-name>
+		<url-pattern>/SessionTest.do</url-pattern>
+	</servlet-mapping>
+
+</web-app>
