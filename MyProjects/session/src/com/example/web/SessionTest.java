@@ -14,7 +14,13 @@ public class SessionTest extends HttpServlet {
     PrintWriter out = response.getWriter();
     out.println("Session Test !!");
 
-    HttpSession session = request.getSession();
+    HttpSession session = request.getSession(false); // request.getSession(false); Session을 생성하지 않고 Get만한다.
+
+    if (session == null) {
+      out.println("</br>Session is Null !!");
+      out.println("</br>Create Session ~");
+      session = request.getSession();
+    }
 
     if (session.isNew()) {
       out.println("</br>This a New Session !!");
