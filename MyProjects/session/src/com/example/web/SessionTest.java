@@ -26,6 +26,7 @@ public class SessionTest extends HttpServlet {
       out.println("</br>This a New Session !!");
     } else {
       out.println("</br>WelCome Back !!");
+      out.println("</br><a href=\""+response.encodeURL("/SessionTest.do")+"\">Session URL Link</a>");
     }
 
   }
