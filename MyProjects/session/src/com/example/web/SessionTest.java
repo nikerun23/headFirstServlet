@@ -25,8 +25,20 @@ public class SessionTest extends HttpServlet {
     if (session.isNew()) {
       out.println("</br>This a New Session !!");
       out.println("</br><a href=\""+request.getContextPath()+response.encodeURL("/SessionTest.do")+"\">Session URL Link</a>");
+      out.println("</br><a href=\""+request.getContextPath()+response.encodeRedirectURL("/RedirectTest.do")+"\">Redirect Session URL Link</a>");
+      Cookie cookie = new Cookie("username","lee");
+      cookie.setMaxAge(-1);
+      response.addCookie(cookie);
     } else {
       out.println("</br>WelCome Back !!");
+      Cookie[] cookies = request.getCookies();
+      for (Cookie cookie : cookies) {
+        if (cookie.getName().equals("username")) {
+          String username = cookie.getValue();
+          out.println("</br>You`r Cookie username : " + username);
+        }
+      }
+
     }
 
   }
