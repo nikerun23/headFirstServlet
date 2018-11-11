@@ -4,6 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
 import java.util.*;
+import com.example.SessionCounter;
 
 public class SessionTest extends HttpServlet {
 
@@ -40,6 +41,10 @@ public class SessionTest extends HttpServlet {
       }
 
     }
+
+    //  Session SessionCounter
+    int activeSessions = SessionCounter.getActiveSession();
+    out.println("</br>activeSessions : " + String.valueOf(activeSessions));
 
   }
 
