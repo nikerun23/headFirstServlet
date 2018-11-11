@@ -11,7 +11,12 @@
 		<servlet-name>sessionTest</servlet-name>
 		<url-pattern>/SessionTest.do</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>sessionTest</servlet-name>
+		<url-pattern>/AddCookie.do</url-pattern>
+	</servlet-mapping>
 	<session-config>
+		<!-- Life Time Minute -->
 		<session-timeout>10</session-timeout>
 	</session-config>
 

@@ -43,4 +43,17 @@ public class SessionTest extends HttpServlet {
 
   }
 
+  public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+
+    response.setContentType("text/html");
+    PrintWriter out = response.getWriter();
+    out.println("Session Add Cookie !!");
+
+    String name = request.getParameter("username");
+
+    Cookie cookie = new Cookie("username", name);
+    response.addCookie(cookie);
+
+  }
+
 }
