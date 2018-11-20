@@ -1,7 +1,8 @@
+<%@ page import="com.example.web.*" %>
 <html>
   <body>
     <%
-      out.println(com.example.web.Counter.getCount());
+      out.println(Counter.getCount());
     %>
   </body>
 </html>
