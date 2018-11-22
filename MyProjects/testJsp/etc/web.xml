@@ -3,5 +3,17 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	id="WebApp_ID" version="3.1">
 
+	<servlet>
+		<servlet-name>TestJspInit</servlet-name>
+		<jsp-file>/testInit.jsp</jsp-file>
+		<init-param>
+			<param-name>username</param-name>
+			<param-value>leehyunkeun</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestJspInit</servlet-name>
+		<url-pattern>/testInit.jsp</url-pattern>
+	</servlet-mapping>
 
 </web-app>
