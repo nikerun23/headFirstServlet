@@ -10,6 +10,10 @@
       sContext.setAttribute("username",username);
     }
     %>
-    <%= application.getAttribute("username") %>
+    application : <%= application.getAttribute("username") %>
+    </br>
+    pageContext : <%= pageContext.getAttribute("username", PageContext.APPLICATION_SCOPE) %>
+    </br>
+    findAttribute : <%= pageContext.findAttribute("username") %>
   </body>
 </html>
