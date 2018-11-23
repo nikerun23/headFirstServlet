@@ -17,12 +17,15 @@
 	</servlet-mapping>
 
 <!--
-	Scripting-invalid
+	Scripting-invalid, el-ignored
 	<jsp-config>
 		<jsp-property-group>
 			<url-pattern>*.jsp</url-pattern>
 			<scripting-invalid>true</scripting-invalid>
+			<el-ignored>true</el-ignored>
 		</jsp-property-group>
 	</jsp-config>
  -->
+
+
 </web-app>
