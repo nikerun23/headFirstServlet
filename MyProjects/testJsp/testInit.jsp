@@ -1,4 +1,4 @@
-<%@ page import="com.example.web.*" %>
+<%@ page import="com.example.web.*" isELIgnored="true"%>
 
 <html>
   <body>
