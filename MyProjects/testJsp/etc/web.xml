@@ -16,6 +16,15 @@
 		<url-pattern>/testInit.jsp</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>TestJspBean</servlet-name>
+		<servlet-class>com.example.web.BeanTest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestJspBean</servlet-name>
+		<url-pattern>/testBean.do</url-pattern>
+	</servlet-mapping>
+
 <!--
 	Scripting-invalid, el-ignored
 	<jsp-config>
