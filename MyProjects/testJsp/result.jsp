@@ -9,5 +9,6 @@
       <jsp:setProperty name="person" property="name" value="newLee" />
     </jsp:useBean>
     Person is : <jsp:getProperty name="person" property="name" /> </br>
+    EL Person is : ${Person.name} </br>
   </body>
 </html>
