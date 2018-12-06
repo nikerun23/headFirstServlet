@@ -13,5 +13,6 @@
     EL Person is : ${Person["name"]} </br>
     EL Person is : ${requestScope.Person.name} </br>
     EL Cookie is : ${cookie.username.value} </br>
+    EL Context Param is : ${initParam.Email} </br>
   </body>
 </html>

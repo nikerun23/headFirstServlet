@@ -25,6 +25,11 @@
 		<url-pattern>/testBean.do</url-pattern>
 	</servlet-mapping>
 
+	<context-param>
+		<param-name>Email</param-name>
+		<param-value>lee@naver.com</param-value>
+	</context-param>
+
 <!--
 	Scripting-invalid, el-ignored
 	<jsp-config>
@@ -35,6 +40,5 @@
 		</jsp-property-group>
 	</jsp-config>
  -->
-
 
 </web-app>
