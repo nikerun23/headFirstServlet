@@ -12,5 +12,6 @@
     EL Person is : ${Person.name} </br>
     EL Person is : ${Person["name"]} </br>
     EL Person is : ${requestScope.Person.name} </br>
+    EL Cookie is : ${cookie.username.value} </br>
   </body>
 </html>

@@ -14,6 +14,9 @@ public class BeanTest extends HttpServlet {
     p.setName("Lee");
     request.setAttribute("Person",p);
 
+    Cookie cookie = new Cookie("username","lee");
+    response.addCookie(cookie);
+
     RequestDispatcher view = request.getRequestDispatcher("result.jsp");
     view.forward(request, response);
 
