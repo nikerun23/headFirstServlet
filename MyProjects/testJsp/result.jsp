@@ -1,4 +1,5 @@
 <%@ page import="com.example.model.*" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
 
 <html>
   <body>
@@ -14,5 +15,6 @@
     EL Person is : ${requestScope.Person.name} </br>
     EL Cookie is : ${cookie.username.value} </br>
     EL Context Param is : ${initParam.Email} </br>
+    JSTL Person is : <c:out value="${Person.name}"/> </br>
   </body>
 </html>
