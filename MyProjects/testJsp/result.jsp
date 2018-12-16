@@ -19,5 +19,7 @@
 
     JSTL Xml True : <c:out value="<b>B bold Tag</b>" escapeXml="true" /> </br>
     JSTL Xml False : <c:out value="<b>B bold Tag</b>" escapeXml="false" /> </br>
+
+    Jstl Null : Hello <c:out value="${name}" default="Guest" />.
   </body>
 </html>
