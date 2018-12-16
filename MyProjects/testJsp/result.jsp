@@ -21,5 +21,11 @@
     JSTL Xml False : <c:out value="<b>B bold Tag</b>" escapeXml="false" /> </br>
 
     Jstl Null : Hello <c:out value="${name}" default="Guest" />.
+
+    <table>
+    <c:forEach var="result" items="${movieList}">
+      <tr><td>${result}</td></tr>
+    </c:forEach>
+  </table>
   </body>
 </html>
