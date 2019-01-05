@@ -44,6 +44,7 @@
 </br> c:url body :
   <c:url value="/testBean.do">
     <c:param name="userName" value="Lee Hyunkeun" />
+    <c:param name="userGender" value="남성" />
   </c:url>
 
   </body>
