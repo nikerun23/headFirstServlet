@@ -30,5 +30,13 @@
   <c:if test="${userType eq 'login'}">
     <textarea name="comments"></textarea>
   </c:if>
+
+  <c:set var="userLevel" scope="session" value="master"/>
+
+  <c:set var="userName" scope="session">
+    Leehyunkeun
+  </c:set>
+  </br>
+  ${sessionScope.userLevel}, ${sessionScope.userName}
   </body>
 </html>
