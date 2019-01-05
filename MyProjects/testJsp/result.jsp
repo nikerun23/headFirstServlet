@@ -27,5 +27,8 @@
       <tr><td>${result}</td></tr>
     </c:forEach>
   </table>
+  <c:if test="${userType eq 'login'}">
+    <textarea name="comments"></textarea>
+  </c:if>
   </body>
 </html>

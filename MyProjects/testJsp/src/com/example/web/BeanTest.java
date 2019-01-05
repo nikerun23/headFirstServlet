@@ -20,6 +20,8 @@ public class BeanTest extends HttpServlet {
     String[] movieList = {"Movie1", "Movie2", "Movie3", "Movie4", "Movie5"};
     request.setAttribute("movieList", movieList);
 
+    request.setAttribute("userType", "login");
+
     RequestDispatcher view = request.getRequestDispatcher("result.jsp");
     view.forward(request, response);
 
