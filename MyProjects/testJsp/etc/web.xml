@@ -30,6 +30,10 @@
 		<param-value>lee@naver.com</param-value>
 	</context-param>
 
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/errorPage.jsp</location>
+	</error-page>
 <!--
 	Scripting-invalid, el-ignored
 	<jsp-config>
