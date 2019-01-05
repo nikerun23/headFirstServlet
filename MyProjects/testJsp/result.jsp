@@ -38,5 +38,13 @@
   </c:set>
   </br>
   ${sessionScope.userLevel}, ${sessionScope.userName}
+  </br>
+  c:url :
+  <a href="<c:url value="/testBean.do" />"><c:url value="/testBean.do" /></a>
+</br> c:url body :
+  <c:url value="/testBean.do">
+    <c:param name="userName" value="Lee Hyunkeun" />
+  </c:url>
+
   </body>
 </html>
