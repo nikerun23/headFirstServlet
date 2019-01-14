@@ -1,4 +1,5 @@
 <%@ taglib prefix="dice" uri="DiceFunctions"%>
+<%@ taglib prefix="mytag" tagdir="/WEB-INF/tags"%>
 
 <html>
   <body>
@@ -7,6 +8,7 @@
     </jsp:useBean>
     Person is : <jsp:getProperty name="person" property="name"/> </br>
 
-    Dice Roll : ${dice:rollIt()}
+    Customtag : <mytag:customtag />
+
   </body>
 </html>
