@@ -10,6 +10,6 @@
       <description>worst use of a custom tag</description>
       <name>simple1</name>
       <tag-class>com.example.web.SimpleTagTest1</tag-class>
-      <body-content>empty</body-content>
+      <body-content>scriptless</body-content>
     </tag>
 </taglib>
