@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class SimpleTagTest1 extends SimpleTagSupport {
 
-  public void doGet() throws JspException, IOException {
+  public void doTag() throws JspException, IOException {
 
     getJspBody().invoke(null);
 
