@@ -18,4 +18,10 @@
       <tag-class>com.example.web.SimpleTagTest1</tag-class>
       <body-content>scriptless</body-content>
     </tag>
+    <tag>
+      <description>loop Tag</description>
+      <name>loopTagTest</name>
+      <tag-class>com.example.web.LoopTagTest</tag-class>
+      <body-content>scriptless</body-content>
+    </tag>
 </taglib>
