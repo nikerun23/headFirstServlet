@@ -24,4 +24,16 @@
       <tag-class>com.example.web.LoopTagTest</tag-class>
       <body-content>scriptless</body-content>
     </tag>
+
+    <tag>
+      <description>loop Tag</description>
+      <name>loopTagTestAtt</name>
+      <tag-class>com.example.web.LoopTagTestAtt</tag-class>
+      <body-content>scriptless</body-content>
+      <attribute>
+        <name>movieList</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+      </attribute>
+    </tag>
 </taglib>
