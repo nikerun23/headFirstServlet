@@ -24,6 +24,7 @@
 	<servlet>
 		<servlet-name>TestJspBean</servlet-name>
 		<servlet-class>com.example.web.BeanTest</servlet-class>
+		<load-on-startup>1<load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>TestJspBean</servlet-name>
