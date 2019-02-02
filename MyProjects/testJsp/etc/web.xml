@@ -8,6 +8,23 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>SecurityURL</web-resource-name>
+			<url-pattern>/testJsp/*</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+		</web-resource-collection>
+
+		<auth-constraint>
+			<role-name>Admin</role-name>
+			<role-name>Member</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+<security-role><role-name>Admin</role-name></security-role>
+<security-role><role-name>Member</role-name></security-role>
+
 	<servlet>
 		<servlet-name>TestJspInit</servlet-name>
 		<jsp-file>/testInit.jsp</jsp-file>
