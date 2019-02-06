@@ -42,6 +42,10 @@
 		<servlet-name>TestJspBean</servlet-name>
 		<servlet-class>com.example.web.BeanTest</servlet-class>
 		<load-on-startup>1<load-on-startup>
+		<security-role-ref>
+			<role-name>Manager</role-name>
+			<role-link>Admin</role-link>
+		</security-role-ref>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>TestJspBean</servlet-name>
