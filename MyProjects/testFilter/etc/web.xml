@@ -13,4 +13,18 @@
 		<url-pattern>/testFilter.do</url-pattern>
 	</servlet-mapping>
 
+	<filter>
+		<filter-name>RequestFilter</filter-name>
+		<filter-class>com.example.web.RequestFilter</filter-class>
+		<init-param>
+			<param-name>LogFileName</param-name>
+			<param-value>UserLog.txt</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>RequestFilter</filter-name>
+		<url-pattern>*.do</url-pattern>
+	</filter-mapping>
+
 </web-app>
